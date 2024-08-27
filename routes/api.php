@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\LocationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CategoryController;
+use App\Models\Location;
 
 Route::group([
     'middleware' => 'api',
@@ -25,3 +28,17 @@ Route::controller(BrandController::class)->group(function() {
 });
 
 
+Route::controller(CategoryController::class)->group(function() {
+    Route::get('index', 'index');
+    Route::get('show/{id}','show');
+    Route::post('store', 'store');
+    Route::put('update_category/{id}', 'update_category');
+    Route::delete('delete_category/{id}', 'delete_category');
+});
+
+
+Route::controller(LocationController::class)->group(function() {
+    Route::post('store', 'store');
+    Route::put('update_location/{id}', 'update_location');
+    Route::delete('delete_location/{id}', 'delete_location');
+});

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use App\Models\Location;
 
 Route::group([
@@ -41,4 +42,13 @@ Route::controller(LocationController::class)->group(function() {
     Route::post('store', 'store');
     Route::put('update_location/{id}', 'update_location');
     Route::delete('delete_location/{id}', 'delete_location');
+});
+
+
+Route::controller(ProductController::class)->group(function() {
+    Route::get('index', 'index');
+    Route::get('show/{id}','show');
+    Route::post('store', 'store');
+    Route::put('update_product/{id}', 'update_product');
+    Route::delete('delete_product/{id}', 'delete_product');
 });

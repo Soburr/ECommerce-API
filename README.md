@@ -9,9 +9,9 @@ This guide assumed you have the following installed on your PC
 ### Composer
 
 ## Clone and navigate
-bash
-git clone git@github.com:Soburr/ECommerce-API.git
-cd ECommerce-API
+##
+    git clone git@github.com:Soburr/ECommerce-API.git
+    cd ECommerce-API
 
 ## Endpoints
 ## Authentication

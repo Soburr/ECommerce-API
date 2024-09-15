@@ -17,9 +17,9 @@ This guide assumed you have the following installed on your PC
 ## POST 
 - /login: Login to the API <br>
 - Request Body: <br>
-  {
-   "email": "user@example.com",
-   "password": "12345678"
+  { <br>
+   "email": "user@example.com", <br>
+   "password": "12345678" <br>
   }
 
   

@@ -13,11 +13,10 @@ This guide assumed you have the following installed on your PC
     git clone git@github.com:Soburr/ECommerce-API.git
     cd ECommerce-API
 
-## Endpoints
 ## Authentication
 ## POST 
-- /login: Login to the API
-- Request Body:
+- /login: Login to the API <br>
+- Request Body: <br>
   {
    "email": "user@example.com",
    "password": "12345678"

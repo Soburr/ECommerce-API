@@ -5,12 +5,12 @@ This repository contains an ecommerce api that provides endpoints for managing p
 
 ## Getting Started 
 This guide assumed you have the following installed on your PC
-### PHP 8.2+
+### PHP 8.2+ <br>
 ### Composer
 
 ## Clone and navigate
 ##
-    git clone git@github.com:Soburr/ECommerce-API.git
+    git clone git@github.com:Soburr/ECommerce-API.git <br>
     cd ECommerce-API
 
 ## Authentication
@@ -24,9 +24,9 @@ This guide assumed you have the following installed on your PC
 
   
 - /register: Register to the API
-- Request Body:
-  {
-   "name": "Jane Doe",
-   "email": "user@example.com",
-   "password": "12345678"
+- Request Body: <br>
+  { <br>
+   "name": "Jane Doe", <br>
+   "email": "user@example.com", <br>
+   "password": "12345678" <br>
   }
